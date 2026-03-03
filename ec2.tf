@@ -28,3 +28,8 @@ resource "aws_instance" "example" {
     ignore_changes = [ami]
   }
 }
+
+resource "aws_ec2_instance_state" "example_state" {
+  instance_id = aws_instance.example.id
+  state       = "stopped"
+}
