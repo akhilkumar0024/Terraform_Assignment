@@ -3,7 +3,7 @@ data "aws_ami" "amazon_linux" {
 
   filter {
     name   = "name"
-    values = ["amazon-linux/images/hvm-ssd/amazon-linux-2023-amd64-server-*"]
+    values = ["al2023-ami-*-x86_64"]
   }
 
   filter {
